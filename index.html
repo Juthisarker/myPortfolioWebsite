@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>respnsive</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="bg-img" >
+<nav class="navbar">
+    <span class="open-slide">
+        <a href="#" onclick="openSideMenu()">
+            <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+        </a>
+    </span>
+
+    <!--<ul class="navbar-nav">-->
+        <!--<li><a href="#">Home</a></li>-->
+        <!--<li><a href="#">About</a></li>-->
+        <!--<li><a href="#">Services</a></li>-->
+        <!--<li><a href="#">Contact</a></li>-->
+    <!--</ul>-->
+
+</nav>
+
+<div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+    <a href="#">Home</a>
+    <a href="about.html">About</a>
+    <a href="work.html">Services</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<main id="home">
+    <div class="menu-branding">
+        <div class="portrait"></div>
+
+    </div>
+    <h1 class="lg-heading">
+        Juthi Sarker Aka
+    </h1>
+    <h2 class="sm-heading">
+        Web Developer
+    </h2>
+    <div class="icons">
+        <a href="#">
+            <i class="fab fa-github fa-2x">
+            </i>
+        </a>
+        <a href="#">
+            <i class="fab fa-linkedin fa-2x">
+            </i>
+        </a>
+        <a href="#">
+            <i class="fab fa-hackerrank fa-2x">
+            </i>
+        </a>
+    </div>
+</main>
+<script>
+    function openSideMenu(){
+        document.getElementById('side-menu').style.width = '250px';
+        document.getElementById('home').style.marginLeft = '250px';
+
+    }
+    function closeSideMenu(){
+        document.getElementById('side-menu').style.width = '0px';
+        document.getElementById('home').style.marginLeft = '0px';
+
+    }
+
+</script>
+</body>
+</html>
